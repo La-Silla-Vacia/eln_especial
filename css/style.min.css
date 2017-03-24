@@ -33,7 +33,8 @@
     max-width: 934px;
     margin: 0 auto;
     padding-left: 0 auto; }
-  .lsvi-container img, .lsvi-container iframe {
+  .lsvi-container iframe,
+  .lsvi-container img {
     max-width: 100%;
     height: auto; }
   .lsvi-container .share-container li {
@@ -50,7 +51,9 @@
     padding-top: 30px;
     height: 0;
     overflow: hidden; }
-  .lsvi-container .video-container iframe, .lsvi-container .video-container object, .lsvi-container .video-container embed {
+  .lsvi-container .video-container embed,
+  .lsvi-container .video-container iframe,
+  .lsvi-container .video-container object {
     position: absolute;
     top: 0;
     left: 0;
@@ -129,10 +132,10 @@
     content: '';
     position: absolute;
     right: 1em;
-    bottom: .8em;
+    bottom: 0.8em;
     /*triangulo*/
-    width: .5em;
-    height: .5em;
+    width: 0.5em;
+    height: 0.5em;
     border: 1px solid #333848;
     border-left: 0;
     border-top: 0;
@@ -170,12 +173,13 @@
     text-decoration: none;
     color: black;
     font-size: 0.9em;
-    padding: 1em; }
+    padding: 1em;
+    box-sizing: border-box; }
   .lsvi-container .historia h4 {
     font-weight: 400; }
   .lsvi-container .circle {
     border-radius: 50%;
-    background-image: url(mineriailegales.jpg); }
+    background-image: url("mineriailegales.jpg"); }
   .lsvi-container a {
     /*text-align: center;*/
     font-weight: 200;
