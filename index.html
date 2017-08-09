@@ -25,8 +25,6 @@
     @import url("http://lasillavacia.com/sites/all/modules/admin_menu/admin_menu.css?omxbcp");
     @import url("http://lasillavacia.com/sites/all/modules/admin_menu/admin_menu_toolbar/admin_menu_toolbar.css?omxbcp");
     @import url("http://lasillavacia.com/modules/shortcut/shortcut.css?omxbcp");
-  </style>
-  <style>
     @import url("http://lasillavacia.com/sites/all/modules/ctools/css/ctools.css?omxbcp");
     @import url("http://lasillavacia.com/sites/all/modules/panels/css/panels.css?omxbcp");
     @import url("http://lasillavacia.com/sites/all/modules/panels/plugins/layouts/flexible/flexible.css?omxbcp");
@@ -57,201 +55,176 @@
 
 <body>
 <div class="lsvi-container">
-  <section class="section-paz row flex-container">
-    <article id="piedra" class="col-sm-6">
-
-      <div class="title">
-        <span>&nbsp;</span>
-        <h2><a href="#">LOS QUE SACAN LA PIEDRA</a></h2>
-
-        <p>A partir de la mezcla de diversas variables (suma de ingredientes) los usuarios podrán conocer el listado de
-          datos que se acomoden a sus criterios de búsqueda.</p>
-      </div>
-      <form class="form" name="basesdatos" method="GET"
-            action="http://archivo.lasillavacia.com/silla-minera/datos-mineria">
-        <div class="input-group">
-          <label for="mineral">Mineral</label>
-          <select id="mineral" name="mineral">
-            <option value="">- Seleccione -</option>
-            <option value="oro">Oro</option>
-            <option value="niquel">Níquel</option>
-            <option value="carbon">Carbón</option>
-          </select>
-        </div>
-
-        <div class="input-group">
-          <label for="estado">Estado del proyecto</label>
-          <select id="estado" name="estado">
-            <option value="">- Seleccione -</option>
-            <option value="exploracion">Exploración</option>
-            <option value="explotacion">Explotación</option>
-            <option value="ambos">Ambos</option>
-          </select>
-        </div>
-
-        <div class="input-group">
-          <label for="departamento">Departamento</label>
-          <select id="departamento" name="departamento">
-            <option value="">- Seleccione -</option>
-            <option value="antioquia">Antioquia</option>
-            <option value="boyaca">Boyacá</option>
-            <option value="cesar">Cesar</option>
-            <option value="cordoba">Córdoba</option>
-            <option value="laguajira">La Guajira</option>
-            <option value="santander">Santander</option>
-            <option value="tolima">Tolima</option>
-            <option value="vaupes">Vaupés</option>
-          </select>
-        </div>
-
-        <div class="input-group">
-          <label for="municipio">Municipio</label>
-          <select id="municipio" name="municipio">
-            <option value="">- Seleccione -</option>
-            <option value="agustin">Agustín Codazzi</option>
-            <option value="albania">Albania</option>
-            <option value="barrancas">Barrancas</option>
-            <option value="becerril">Becerril</option>
-            <option value="cajamarca">Cajamarca</option>
-            <option value="california">California</option>
-            <option value="chiriguana">Chiriguaná</option>
-            <option value="distraccion">Distracción</option>
-            <option value="elpaso">El Paso</option>
-            <option value="fonseca">Fonseca</option>
-            <option value="hatonuevo">Hatonuevo</option>
-            <option value="lajagua">La Jagua de Ibirico</option>
-            <option value="montelibano">Montelíbano</option>
-            <option value="nechi">Nechí</option>
-            <option value="samaca">Samacá</option>
-            <option value="sanjuan">San Juan del Cesar</option>
-            <option value="sanroque">San Roque</option>
-            <option value="soacha">Socha</option>
-            <option value="socota">Socotá</option>
-            <option value="taraira">Taraira</option>
-            <option value="vetas">Vetas</option>
-            <option value="zaragoza">Zaragoza</option>
-          </select>
-        </div>
-
-        <div class="input-group">
-          <label for="origen">Origen del capital</label>
-          <select id="origen" name="origen">
-            <option value="">- Seleccione -</option>
-            <option value="extranjera">Extranjera</option>
-            <option value="mixta">Mixta</option>
-            <option value="nacional">Nacional</option>
-          </select>
-        </div>
-
-        <input type="submit" class="click" value="HAGA SUS CRUCES">
-      </form>
-    </article>
-    <article id="mineriacomparada" class="col-sm-6">
-      <div class="title">
-        <span>&nbsp;</span>
-        <h2><a href="#">MINERÍA COMPARADA</a></h2>
-        <p>A partir de la mezcla de diversas variables (suma de ingredientes) los usuarios podrán conocer el listado de
-          datos que se acomoden a sus criterios de búsqueda.</p>
-      </div>
-
-      <img class="mapimg"
-           src="https://raw.githubusercontent.com/La-Silla-Vacia/mineria-especial/master/img/world.jpg"
-           alt="Mapa">
-      <form class="form" name="mineriacomparada" action="/silla-minera/mineria-comparada" method="GET">
-        <div class="input-group">
-          <label for="regalias">Regalías mineras o impuesto a la extracción</label>
-          <select id="regalias" name="regalias">
-            <option value="">- Seleccione -</option>
-            <option value="aportepib">Aporte al PIB del sector Minería</option>
-            <option value="impuestorenta">Impuesto a la Renta</option>
-            <option value="tiempolicencias">Tiempo para otorgar licencias ambientales</option>
-            <option value="mercadocarbon">Aporte al mercado mundial: Carbón</option>
-            <option value="mercadooro">Aporte al mercado mundial: Oro</option>
-            <option value="mercadoniquel">Aporte al mercado mundial: Níquel</option>
-            <option value="mercadocobre">Aporte al mercado mundial: Cobre</option>
-            <option value="empleos">Empleos sector gran minería</option>
-          </select>
-        </div>
-        <input type="submit" class="click" value="COMPARAR">
-      </form>
-    </article>
+  <section class="section-eln">
+    <div class="title">
+      <h2>Título ojalá y solamente de dos líneas hablando de los decisores</h2>
+      <h3>Frase o descripción frase o descripción frase o descripción frase o descripción frase o descripción.</h3>
+    </div>
   </section>
 
-  <section id="grandeshistorias" class="section-paz">
-    <div class="row">
-      <div class="title col-sm-4">
-        <span>&nbsp;</span>
-        <h2><a href="#">GRANDES HISTORIAS</a></h2>
-      </div>
-    </div>
-    <div class="row circle-buttons">
-      <div class="col-sm-3 col-xs-6">
-        <a href="http://archivo.lasillavacia.com/node/48667">
-          <img class="circle"
-               src="https://raw.githubusercontent.com/La-Silla-Vacia/mineria-especial/master/img/mineriailegales.jpg"
-               alt="Minería ilegal">
-          <h3>LA MINERÍA Y LOS ILEGALES</h3>
-        </a>
-      </div>
-
-      <div class="col-sm-3 col-xs-6">
-        <a href="http://archivo.lasillavacia.com/node/48414">
-          <img class="circle"
-               src="https://raw.githubusercontent.com/La-Silla-Vacia/mineria-especial/master/img/micosypulmones.jpg"
-               alt="Micos y pulmones">
-          <h3>MINERÍA, MICOS Y PULMONES</h3>
-        </a>
-      </div>
-
-      <div class="col-sm-3 col-xs-6">
-        <a href="http://archivo.lasillavacia.com/node/48023">
-          <img class="circle"
-               src="https://raw.githubusercontent.com/La-Silla-Vacia/mineria-especial/master/img/indigenasafros.jpg"
-               alt="Indígenas y afros">
-          <h3>MINERÍA, INDÍGENAS Y AFROS</h3>
-        </a>
-      </div>
-
-      <div class="col-sm-3 col-xs-6">
-        <a href="http://archivo.lasillavacia.com/historia/mas-petroleo-mas-carbon-mas-votantes-23265">
-          <img class="circle"
-               src="https://raw.githubusercontent.com/La-Silla-Vacia/mineria-especial/master/img/colombia.jpg"
-               alt="Atlas">
-          <h3>ATLAS DE LA MINERÍA</h3>
-        </a>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="videos" class="section-paz">
-
-    <div class="row">
-      <div class="title col-sm-4">
-        <span>&nbsp;</span>
-        <h2><a href="#">VIDEOS</a></h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="video-container">
-          <iframe width="560" height="315"
-                  src="https://www.youtube.com/embed/_aQ80BvQQY8?list=UUIK0omsUQq_93xxEZ58yoRQ?ecver=1"
-                  allowfullscreen></iframe>
+  <section class="section-eln">
+    <div class="tabla-body">
+      <div class="pc">
+        <div class="categorias">
+          <div class="g-category vacio"></div>
+          <div class="g-category eln">ELN</div>
+          <div class="g-category presidente1">Presidente</div>
+          <div class="g-category presidente2">Internacional</div>
         </div>
-        <p>El legado de la Drummond</p>
-      </div>
-      <div class="col-sm-6">
-        <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/FPkEA_zYZk0?ecver=1"
-                  allowfullscreen></iframe>
+
+        <div class="fotopersonas">
+          <div class="g-person"  style="border: 0"></div>
+
+          <div class="g-person">
+            <div class="g-image"><img src="http://archivo.lasillavacia.com/archivos/historias/eln/1.jpg"></div>
+          </div>
+
+          <div class="g-person">
+            <div class="g-image"><img src="http://archivo.lasillavacia.com/archivos/historias/eln/2.jpg"></div>
+          </div>
+
+          <div class="g-person">
+            <div class="g-image"><img src="http://archivo.lasillavacia.com/archivos/historias/eln/3.jpg"></div>
+          </div>
+
+          <div class="g-person">
+            <div class="g-image"><img src="http://archivo.lasillavacia.com/archivos/historias/eln/4.jpg"></div>
+          </div>
+
+          <div class="g-person">
+            <div class="g-image"><img src="http://archivo.lasillavacia.com/archivos/historias/eln/5.jpg"></div>
+          </div>
+
+          <div class="g-person">
+            <div class="g-image"><img src="http://archivo.lasillavacia.com/archivos/historias/eln/6.jpg"></div>
+          </div>
         </div>
-        <p>Las piedras en el zapato de piedras</p>
+
+        <div class="nombrepresonas">
+          <div class="g-name"></div>
+          <div class="g-name"><span>Pablito</span></div>
+          <div class="g-name"><span>Pablo Beltrán</span></div>
+          <div class="g-name"><span>Nicolas Gabino</span></div>
+          <div class="g-name"><span>Antonio García</span></div>
+          <div class="g-name"><span>Juan Manuel Santos</span></div>
+          <div class="g-name"><span>Maduro y Chavismo</span></div>
+        </div>
+
+        <div class="cargo">
+          <div class="g-title"></div>
+          <div class="g-title">Son-in-law and senior adviser</div>
+          <div class="g-title">Son-in-law and senior adviser</div>
+          <div class="g-title">Son-in-law and senior adviser</div>
+          <div class="g-title">Son-in-law and senior adviser</div>
+          <div class="g-title">Son-in-law and senior adviser</div>
+          <div class="g-title">Son-in-law and senior adviser</div>
+        </div>
+
+        <div class="intereses">
+          <div class="g-connection g-first"><span>Intereses</span></div>
+          <div class="g-connection g-other"><span>Discussed secret back channel with Russian ambassador. Met with head.</span></div>
+          <div class="g-connection g-other"><span>Spoke twice with ambassador and discussed Ukraine.</span></div>
+          <div class="g-connection g-other"><span>Discussed sanctions with ambassador; paid $45,000 by state-owned media for speech.</span></div>
+          <div class="g-connection g-other"><span>Met with a Russian lawyer he believed would offer him damaging information.</span></div>
+          <div class="g-connection g-other"><span>Has personal and business ties to Ukraine; proposed a peace plan between the country.</span></div>
+          <div class="g-connection g-other"><span>Worked for pro-Russian Ukrainians and with a Russian billionaire.</span></div>
+        </div>
+
+        <div class="intereses">
+          <div class="g-connection g-first"><span>¿Qué quiere recibir el Gobierno de ellos?</span></div>
+          <div class="g-connection g-other"><span>Discussed secret back channel with Russian ambassador. Met with head.</span></div>
+          <div class="g-connection g-other"><span>Spoke twice with ambassador and discussed Ukraine.</span></div>
+          <div class="g-connection g-other"><span>Discussed sanctions with ambassador; paid $45,000 by state-owned media for speech.</span></div>
+          <div class="g-connection g-other"><span>Met with a Russian lawyer he believed would offer him damaging information.</span></div>
+          <div class="g-connection g-other"><span>Has personal and business ties to Ukraine; proposed a peace plan between the country.</span></div>
+          <div class="g-connection g-other"><span>Worked for pro-Russian Ukrainians and with a Russian billionaire.</span></div>
+        </div>
+
+        <div class="intereses">
+          <div class="g-connection g-first"><span>¿Qué tiene el Gobierno que darle a cambio?</span></div>
+          <div class="g-connection g-other"><span>Discussed secret back channel with Russian ambassador. Met with head.</span></div>
+          <div class="g-connection g-other"><span>Spoke twice with ambassador and discussed Ukraine.</span></div>
+          <div class="g-connection g-other"><span>Discussed sanctions with ambassador; paid $45,000 by state-owned media for speech.</span></div>
+          <div class="g-connection g-other"><span>Met with a Russian lawyer he believed would offer him damaging information.</span></div>
+          <div class="g-connection g-other"><span></span></div>
+          <div class="g-connection g-other"><span>Worked for pro-Russian Ukrainians and with a Russian billionaire.</span></div>
+        </div>
+
+        <div class="intereses" style="border-bottom: 0">
+          <div class="g-connection g-first"><span>¿Cómo puede desmejorar su Alternativa?</span></div>
+          <div class="g-connection g-other"><span>Discussed secret back channel with Russian ambassador. Met with head.</span></div>
+          <div class="g-connection g-other"><span>Spoke twice with ambassador and discussed Ukraine.</span></div>
+          <div class="g-connection g-other"><span>Discussed sanctions with ambassador; paid $45,000 by state-owned media for speech.</span></div>
+          <div class="g-connection g-other"><span>Met with a Russian lawyer he believed would offer him damaging information.</span></div>
+          <div class="g-connection g-other"><span></span></div>
+          <div class="g-connection g-other"><span>Worked for pro-Russian Ukrainians and with a Russian billionaire.</span></div>
+        </div>
+
       </div>
     </div>
   </section>
+
+  <section class="section-eln">
+  <div class="title subtitle2">
+    <h3><span class="resaltar">Pablito</span> es un guerrillero frase o descripción frase o descripción frase o descripción frase o descripción  frase o descripción frase o descripción.</h3>
+    <img src="http://archivo.lasillavacia.com/archivos/historias/eln/1.jpg">
+    <p><strong>Alternativas y consecuencias:</strong> President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016. President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016.</p>
+
+    <p>The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign. The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign.</p>
+  </div>
+</section>
+
+  <section class="section-eln">
+    <div class="title subtitle2">
+      <h3><span class="resaltar">Pablo Beltrán</span> es un guerrillero frase o descripción frase o descripción frase o descripción frase o descripción  frase o descripción frase o descripción.</h3>
+      <img src="http://archivo.lasillavacia.com/archivos/historias/eln/2.jpg">
+      <p><strong>Alternativas y consecuencias:</strong> President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016. President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016.</p>
+
+      <p>The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign. The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign.</p>
+    </div>
+  </section>
+
+  <section class="section-eln">
+    <div class="title subtitle2">
+      <h3><span class="resaltar">Nicolás Gabino</span> es un guerrillero frase o descripción frase o descripción frase o descripción frase o descripción.</h3>
+      <img src="http://archivo.lasillavacia.com/archivos/historias/eln/3.jpg">
+      <p><strong>Alternativas y consecuencias:</strong> President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016. President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016.</p>
+
+      <p>The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign. The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign.</p>
+    </div>
+  </section>
+
+  <section class="section-eln">
+    <div class="title subtitle2">
+      <h3><span class="resaltar">Antonio García</span> es un guerrillero frase o descripción frase o descripción frase o descripción frase o descripción</h3>
+      <img src="http://archivo.lasillavacia.com/archivos/historias/eln/4.jpg">
+      <p><strong>Alternativas y consecuencias:</strong> President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016. President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016.</p>
+
+      <p>The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign. The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign.</p>
+    </div>
+  </section>
+
+  <section class="section-eln">
+    <div class="title subtitle2">
+      <h3><span class="resaltar">Juan Manuel Santos</span> es un guerrillero frase o descripción frase o descripción frase o descripción frase o descripción.</h3>
+      <img src="http://archivo.lasillavacia.com/archivos/historias/eln/5.jpg">
+      <p><strong>Alternativas y consecuencias:</strong> President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016. President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016.</p>
+
+      <p>The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign. The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign.</p>
+    </div>
+  </section>
+
+  <section class="section-eln">
+    <div class="title subtitle2">
+      <h3><span class="resaltar">Maduro y el Chavismo</span> es un guerrillero frase o descripción frase o descripción frase o descripción frase o descripción.</h3>
+      <img src="http://archivo.lasillavacia.com/archivos/historias/eln/6.jpg">
+      <p><strong>Alternativas y consecuencias:</strong> President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016. President Trump’s eldest son, who currently runs the Trump Organization with his brother, met with Natalia Veselnitskaya, a Kremlin-connected Russian lawyer, in June 2016.</p>
+
+      <p>The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign. The younger Mr. Trump took the meeting to hear about possibly damaging information about Mrs. Clinton, which he was told over email was part of a Russian government effort to aid his father’s campaign.</p>
+    </div>
+  </section>
+
+
 </div>
 
 </body>
